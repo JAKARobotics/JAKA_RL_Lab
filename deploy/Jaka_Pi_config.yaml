@@ -60,15 +60,15 @@ mimic:
   motion_file: moxingwu_edit_50Hz.csv #dance_easy_f_50Hz.csv #dance_easy_f_50Hz.csv #flip.csv #"taiji_0123_3_f.csv"
   is_csv: False
   fps: 50.0
-  time_start: 0  # Start time in seconds (default: 0.0)  从哪里开始跳
+  time_start: 0  # Start time in seconds (default: 0.0). Motion playback starts here.
   time_end: 232   # End time in seconds (null means use full duration)
   state_mode: 1
   state_string: "Mimic"
   # Base directory for resolving relative paths (optional)
   base_dir: "./mimic/data_in/"
-  # 说明：
-  # - CSV顺序：left_leg(0-5), right_leg(6-11), waist(12), right_arm(13-17), left_arm(18-22), neck(23-24)
-  # - Observation顺序：left_leg(0-5), left_arm(6-10), right_leg(11-16), right_arm(17-21), waist(22), neck(23-24)
+  # Notes:
+  # - CSV order: left_leg(0-5), right_leg(6-11), waist(12), right_arm(13-17), left_arm(18-22), neck(23-24)
+  # - Observation order: left_leg(0-5), left_arm(6-10), right_leg(11-16), right_arm(17-21), waist(22), neck(23-24)
   joint_ids_map: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]  
   initial_robot_quat: [1.0, 0.0, 0.0, 0.0]
   num_actions: 27
